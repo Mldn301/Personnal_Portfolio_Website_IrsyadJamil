@@ -93,7 +93,7 @@ document.addEventListener('click', function(e) {
     document.getElementById('popup-image').src = image;
   }
 
-  if (e.target.classList.contains('close') || e.target.id === 'mypPopup'){
+  if (e.target.classList.contains('close') || e.target.id === 'myPopup'){
     document.getElementById('myPopup').style.display = 'none';
   }
 });

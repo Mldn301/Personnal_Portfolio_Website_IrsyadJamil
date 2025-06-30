@@ -41,7 +41,7 @@ nav {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
 } 
@@ -75,11 +75,30 @@ main {
 .percentage-bar {
     width: 0;
     height: 100%;
-    background-color: #033867;
+    background-color: #0FFCBE;
     transition: width 1s ease-in-out;
     text-align: center;
     color: white;
-    line-height: 20px;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-box{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.item-skill-box {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: 200px;
+    height: 25px;
+    margin: auto;
 }
 
 .main-text {
@@ -168,7 +187,7 @@ footer {
     min-width: 0;
     max-width: 200px;
     margin: auto;
-    border: bold;
+    
 }
 
 .portfolio-card {
@@ -228,10 +247,12 @@ footer {
     padding: 30px;
     border-radius: 10px;
     max-width: 400px;
+    max-height: 70vh;
     width: 90%;
     text-align: center;
     position: relative;
     color: black;
+    overflow-y: auto;
 }
 
 .popup-content h2 {
