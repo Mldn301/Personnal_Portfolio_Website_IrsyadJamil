@@ -80,3 +80,20 @@ function animatePercentageBars() {
     }, 20);
   });
 }
+
+document.addEventListener('click', function(e) {
+  if(e.target.classList.contains('open-popup')){
+    const title = e.target.getAttribute('data-title');
+    const desc = e.target.getAttribute('data-desc');
+    const image = e.target.getAttribute('data-image');
+
+    document.getElementById('popup-title').textContent = title;
+    document.getElementById('popup-description').textContent = desc;
+    document.getElementById('myPopup').style.display = 'flex';
+    document.getElementById('popup-image').src = image;
+  }
+
+  if (e.target.classList.contains('close') || e.target.id === 'mypPopup'){
+    document.getElementById('myPopup').style.display = 'none';
+  }
+});
