@@ -198,7 +198,7 @@ footer {
 }
 
 .card {
-    background: white;
+    background: rgb(218, 218, 218);
     color: black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -243,7 +243,7 @@ footer {
 }
 
 .popup-content{
-    background: white;
+    background: rgb(218, 218, 218);
     padding: 30px;
     border-radius: 10px;
     max-width: 400px;
